@@ -1,0 +1,33 @@
+#@server = https://ubiquitous-dollop-vgqvx7jqrh5-8080.app.github.dev
+@server = http://localhost:8081
+@instrumentos = {{server}}/api/instrumentos
+@musicos = {{server}}/api/musicos
+@publicaciones = {{server}}/api/publicaciones
+###
+GET {{publicaciones}}/1
+###
+POST {{instrumentos}}
+Content-Type: application/json
+
+{
+  "nombre" : "Quena",
+  "categoria" : "Instrumento de viento",
+  "descripcion" : "tubo con orificios que al taparlos hacen sonar diferentes notas"
+}
+###
+GET {{musicos}}
+###
+GET {{musicos}}/1
+###
+PATCH {{musicos}}/1
+Content-Type: application/json
+
+{
+  "nombre" : "Jaime Hendrix"
+}
+###
+GET {{server}}/api/bandas/1
+###
+GET {{server}}/api/integrantes
+###
+GET {{server}}/api/bandas/1/formacion
