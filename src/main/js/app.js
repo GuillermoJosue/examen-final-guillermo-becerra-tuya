@@ -14,9 +14,9 @@ const NuevoPublicacionPage = require('./pages/nuevo-publicacion');
 
 const router = createBrowserRouter([
 	{ path: '/', element: <PageHome /> },
-	{ path: '/editar-musico/:id', element: <PageEditarAutor /> },
+	{ path: '/editar-autor/:id', element: <PageEditarAutor /> },
+	{ path: '/editar-libro/:id', element: <PageEditarLibro /> },
 	{ path: '/nuevo-autor', element: <PageNuevoAutor /> },
-	{ path: '/editar-instrumento/:id', element: <PageEditarLibro /> },
 	{ path: '/nuevo-libro', element: <PageNuevoLibro /> },
 	{ path: '/nueva-editorial', element: <PageNuevaEditorial /> },
 	{ path: '/ver-editorial/:id', element: <VerEditorialPage /> },

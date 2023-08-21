@@ -40811,14 +40811,14 @@ var router = createBrowserRouter([{
   path: '/',
   element: /*#__PURE__*/React.createElement(PageHome, null)
 }, {
-  path: '/editar-musico/:id',
+  path: '/editar-autor/:id',
   element: /*#__PURE__*/React.createElement(PageEditarAutor, null)
+}, {
+  path: '/editar-libro/:id',
+  element: /*#__PURE__*/React.createElement(PageEditarLibro, null)
 }, {
   path: '/nuevo-autor',
   element: /*#__PURE__*/React.createElement(PageNuevoAutor, null)
-}, {
-  path: '/editar-instrumento/:id',
-  element: /*#__PURE__*/React.createElement(PageEditarLibro, null)
 }, {
   path: '/nuevo-libro',
   element: /*#__PURE__*/React.createElement(PageNuevoLibro, null)
