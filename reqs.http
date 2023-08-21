@@ -1,33 +1,33 @@
-#@server = https://ubiquitous-dollop-vgqvx7jqrh5-8080.app.github.dev
-@server = http://localhost:8081
-@instrumentos = {{server}}/api/instrumentos
-@musicos = {{server}}/api/musicos
+
+@server = http://localhost:8080
+@libros = {{server}}/api/libros
+@autores = {{server}}/api/autores
 @publicaciones = {{server}}/api/publicaciones
 ###
-GET {{publicaciones}}/1
+GET {{libros}}/1
 ###
-POST {{instrumentos}}
+POST {{libros}}
 Content-Type: application/json
 
 {
-  "nombre" : "Quena",
-  "categoria" : "Instrumento de viento",
-  "descripcion" : "tubo con orificios que al taparlos hacen sonar diferentes notas"
+  "nombre" : "Juego de Tronos",
+  "categoria" : "Accion",
+  "descripcion" : "Medieval, aventura"
 }
 ###
-GET {{musicos}}
+GET {{autores}}
 ###
-GET {{musicos}}/1
+GET {{autores}}/1
 ###
-PATCH {{musicos}}/1
+PATCH {{autores}}/1
 Content-Type: application/json
 
 {
-  "nombre" : "Jaime Hendrix"
+  "nombre" : "George R. R. Martin"
 }
 ###
-GET {{server}}/api/bandas/1
+GET {{server}}/api/editoriales/1
 ###
-GET {{server}}/api/integrantes
+GET {{server}}/api/publicaciones
 ###
-GET {{server}}/api/bandas/1/formacion
+GET {{server}}/api/editoriales/1/formacion
